@@ -1,16 +1,26 @@
-#Faça um algoritmo que imprima a tabuada do 5
+#Leia numeros positivos e calcule o quadrado de cada um
+print("Iremos calcular o quadrado dos números")
+r =input("Deseja realizar o procedimento? (sim para 'sim' e não para 'não')").upper()
+while(r == 'SIM'):
+    n = int(input("Digite um número:"))
+    res = n ** 2
+    print("O quadrado de {0} é {1}" .format(n, res))
+    r = input("Deseja realizar o procedimento novamente? (sim para 'sim' e não para 'não')").upper()
+
+#Faça um algoritmo que imprima a tabuada de qualquer numero
 i = 0
-c = 5
+tab = int(input("digite um numero inteiro para impressão da tabuada: "))
 r = 0
 
 while(i<=10):
-    r = c * i
+    r = tab * i
     print(r)
     i = i +1
 
 
 
 #calcule a média de 2 alunos
+print("Iremos calcular a média dos alunos")
 i=0
 qntd=2
 acumulador = 0
@@ -27,6 +37,7 @@ print("A média da sala é: ", acumulador)
 
 
 #some somente os numeros inteiros pares digitados pelo usuario
+print("Iremos calcular os numeros inteiros pares digitados (digite 0 para sair)")
 numero=int(input("Digite um numero inteiro "))
 soma = 0
 i = 0
